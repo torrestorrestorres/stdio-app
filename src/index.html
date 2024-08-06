@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+    <script defer src="render.js"></script>
+  </head>
+  <body>
+    <h1>💖 Generate QR Code</h1>
+    <form action="/" id="qr-generation-form">
+      <input 
+          type="text"
+          name="qr-code-content"
+          id="qr-content" 
+          value=""
+          placeholder="Enter QR content"
+          autocomplete="off" />      
+      <input 
+          type="submit" 
+          value="Generate QR Code" />
+    </form>
+    <br />    
+    <div id="qr-code"></div>
+    <button id="qr-download-button" onclick="downloadQrCode" style="display: none;">Download</button>
+  </body>
+</html>
